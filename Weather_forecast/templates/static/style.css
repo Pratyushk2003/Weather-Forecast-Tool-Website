@@ -1,0 +1,201 @@
+body {
+  background-size: cover;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  margin-bottom: 20px;
+}
+
+#city-input {
+  border: 2px solid #0078d0;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 18px;
+  color: #0078d0;
+  outline: none;
+  box-shadow: 0 0 5px #024778;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.city-input:hover,
+.city-input:focus {
+  box-shadow: 0 0 10px #024778;
+}
+
+.city-input::placeholder {
+  color: #0078d0;
+  opacity: 0.7;
+}
+.button-71 {
+  background-color: #0078d0;
+  border: 0;
+  border-radius: 56px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-71:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+
+.button-71:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .button-71 {
+    padding: 16px 48px;}
+  }
+
+.weather-card {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 800px;
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin: 0 auto;
+  /* Add box-shadow for a subtle depth effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Add border-radius for rounded corners */
+  border-radius: 10px;
+  /* Add background color and background image */
+  background-color: #fff;
+  background-image: linear-gradient(to bottom, #bdc3c7, #eaeaea);
+}
+
+.location {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-weight: bold;
+  color: #333;
+}
+
+.temperature,
+.humidity,
+.windspeed,
+.description,
+.icon{
+  width: calc(50% - 20px);
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin: 0 auto 10px;
+  text-align: center;
+  background-color: #fff;
+  color: #333;
+  /* Add box-shadow for a subtle depth effect */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Add border-radius for rounded corners */
+  border-radius: 5px;
+}
+
+.humidity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.humidity-icon {
+  margin-bottom: 10px;
+}
+
+.humidity-value {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+}
+
+.windspeed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.wind-icon {
+  margin-bottom: 10px;
+}
+
+.wind-value {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+}
+
+.icon {
+  width: 150px;
+  height: 150px;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

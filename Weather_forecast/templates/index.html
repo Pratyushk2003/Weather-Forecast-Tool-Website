@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather Forecast</title>
+  <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container">
+    <h1><b>Weather Forecast</b></h1>
+    <div class="form-container">
+      <form id="weather-form">
+        <input type="text" id="city-input" placeholder="Enter city or place">
+        <input type="submit" value="Get Weather" class="button-71">
+      </form>
+    </div>
+    <div class="weather-card">
+      <div class="location"></div>
+      Temperature
+      <div class="temperature"></div>
+      Humidity
+      <div class="humidity animate-slide-up">
+        <img class="humidity-icon" src="" alt="Humidity Icon" width="60px" height="60px">
+        <span class="humidity-value"></span>
+      </div>
+      Wind-Speed<div class="windspeed animate-slide-up">
+        <img class="wind-icon" src="" alt="Wind Icon" width="60px" height="60px">
+        <span class="windspeed-value"></span>
+      </div>
+      description
+      <div class="description animate-fade-in"></div>
+      <img class="icon animate-fade-in" src="" alt="Weather Icon">
+    </div>
+  </div>
+  <script src="static/script.js"></script>
+</body>
+</html>
