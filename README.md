@@ -24,11 +24,9 @@ And for error handling it will suggest you:
 # HOW TO RUN THE CODE
 In the terminal just run the command:
 
-py app.py
-
-OR
-
-python app.py
+    py app.py
+        OR
+    python app.py 
 
 #Result
 ![image](https://github.com/Pratyushk2003/Weather-Forecast-Tool-Website/assets/77561223/f958d085-6d26-42f9-8309-6e15d6ff0f60)
