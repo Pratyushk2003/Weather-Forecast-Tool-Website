@@ -25,7 +25,9 @@ And for error handling it will suggest you:
 In the terminal just run the command:
 
 py app.py
+
 OR
+
 python app.py
 
 #Result
