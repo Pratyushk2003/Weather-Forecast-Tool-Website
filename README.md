@@ -12,7 +12,7 @@ then GitHub Copilot will give you the suggestion of the code according to your c
 
 When you give the comment “Parse the JSON response” it will give you the suggestion 
 
-	“weather_data = json.loads(response.text)”
+	weather_data = json.loads(response.text)
 	
 And for error handling it will suggest you:
 
